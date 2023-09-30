@@ -1,17 +1,21 @@
 using UnityEngine;
-using UnityEngine.UI; // Для работы с текстом на UI-компоненте.
+using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private int requiredEnemies = 1; // Количество необходимых врагов.
-    private int currentEnemies; // Текущее количество врагов.
+    [SerializeField] private int requiredEnemies = 1;
+    private int currentEnemies;
 
-    public Text doorText; // Ссылка на текстовый элемент, отображающий количество оставшихся врагов.
+    public Text doorText;
+    private Animator doorAnimator;
 
     private void Start()
     {
         currentEnemies = requiredEnemies;
         UpdateDoorText();
+
+        // Получаем компонент Animator у двери.
+        doorAnimator = GetComponent<Animator>();
     }
 
     public void EnemyDestroyed()
@@ -38,8 +42,7 @@ public class DoorController : MonoBehaviour
 
     private void OpenDoor()
     {
-        // Здесь добавьте код, который должен выполниться при открытии двери.
-        // Например, проиграть анимацию или звук, затем уничтожить дверь.
-        Destroy(gameObject);
+        // Запускаем анимацию открытия двери, устанавливая триггер "IsOpening".
+        doorAnimator.SetTrigger("IsOpening");
     }
 }
