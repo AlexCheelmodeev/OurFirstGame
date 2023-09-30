@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: b50805bc79a16654cbd6eed777251ec9
-=======
-guid: 8a80030c6ef5f424ab254fe44594ddf6
->>>>>>> 0860b49375e67013bada7a84acd9f55dcb03c5c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,24 +33,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: 0
-=======
     filterMode: 1
->>>>>>> 0860b49375e67013bada7a84acd9f55dcb03c5c0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> 0860b49375e67013bada7a84acd9f55dcb03c5c0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -74,15 +62,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,25 +103,45 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
-      name: vortex_2
+      name: vortex_0
       rect:
         serializedVersion: 2
-        x: 555
-        y: 62
-        width: 235
-        height: 130
+        x: 919
+        y: 198
+        width: 4
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb07eedd0e8ff3944ba4abc25fa16486
-      internalID: -1785111801
+      spriteID: 3383648749267014f9880240f04bb2d6
+      internalID: -1111481001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vortex_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 61
+        width: 220
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b359e74a64a360c4794e08102c5ba63b
+      internalID: -726788984
       vertices: []
       indices: 
       edges: []
@@ -143,18 +151,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 282
-        y: 62
-        width: 235
-        height: 130
+        y: 61
+        width: 222
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e07131601abb346b0d2360c5961a71
-      internalID: 2059015243
+      spriteID: 31bc2b36f65595d45accc038e923634b
+      internalID: -66178073
       vertices: []
       indices: 
       edges: []
@@ -164,18 +172,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 834
-        y: 62
-        width: 235
-        height: 130
+        y: 61
+        width: 221
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46179a935bfd60d43be1a01c2980a1da
-      internalID: -1077512172
+      spriteID: 108a76dc170599c48b7e7ac7e898de81
+      internalID: -1404819862
       vertices: []
       indices: 
       edges: []
@@ -185,18 +193,39 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1104
-        y: 62
-        width: 235
-        height: 130
+        y: 61
+        width: 232
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d25550f8a228a01419e87ee608b6e383
-      internalID: 1810178334
+      spriteID: a466106c40a389944a19313a92177a70
+      internalID: 969800331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vortex_10
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 173
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9da5b4727c18f4a9dc6780a5d7b73d
+      internalID: -1103295753
       vertices: []
       indices: 
       edges: []
@@ -210,14 +239,14 @@ TextureImporter:
         width: 8
         height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5b4c386e4a59a44b8252e81828f35c8
-      internalID: 571438818
+      spriteID: 5bbe0279a191df64b8ce572b4076fbf9
+      internalID: 178741840
       vertices: []
       indices: 
       edges: []
@@ -226,19 +255,19 @@ TextureImporter:
       name: vortex_12
       rect:
         serializedVersion: 2
-        x: 10
-        y: 62
+        x: 9
+        y: 61
         width: 235
-        height: 130
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1effe7feee47bc4f9a2d3754ede3ed1
-      internalID: 776780010
+      spriteID: 9dd58d2764023ed4985f6f82d9371c6a
+      internalID: -495985525
       vertices: []
       indices: 
       edges: []
@@ -247,26 +276,44 @@ TextureImporter:
       name: vortex_13
       rect:
         serializedVersion: 2
-        x: 1379
-        y: 62
-        width: 235
-        height: 130
+        x: 1380
+        y: 61
+        width: 226
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e783afc48c359e489eb0726a2b17c9b
-      internalID: 1996919134
+      spriteID: d20eb87ba66b1f8409988ad8e6b50f85
+      internalID: 1319461765
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-    sprites: []
->>>>>>> 0860b49375e67013bada7a84acd9f55dcb03c5c0
+    - serializedVersion: 2
+      name: vortex_16
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 111
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbd0e46312e00b4f9de834d6c8a47fa
+      internalID: 1333359592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -277,33 +324,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
     nameFileIdTable:
-      vortex_0: 731220585
-      vortex_1: -1654543157
-      vortex_10: 451434515
-      vortex_11: 571438818
-      vortex_12: 776780010
-      vortex_13: 1996919134
-      vortex_14: -968477311
-      vortex_15: 1480201461
-      vortex_16: -473159399
-      vortex_17: -1821017250
-      vortex_18: -1752352081
-      vortex_19: 433314483
-      vortex_2: -1785111801
-      vortex_20: -729614920
-      vortex_21: 1319312522
-      vortex_3: -1611838015
-      vortex_4: 2124858460
-      vortex_5: 561952858
-      vortex_6: 2059015243
-      vortex_7: 2090861049
-      vortex_8: -1077512172
-      vortex_9: 1810178334
-=======
-    nameFileIdTable: {}
->>>>>>> 0860b49375e67013bada7a84acd9f55dcb03c5c0
+      vortex_0: -1111481001
+      vortex_1: 824579450
+      vortex_10: -1103295753
+      vortex_11: 178741840
+      vortex_12: -495985525
+      vortex_13: 1319461765
+      vortex_14: -1555062224
+      vortex_15: 332656689
+      vortex_16: 1333359592
+      vortex_17: 1796204993
+      vortex_18: 184859920
+      vortex_19: 1455170967
+      vortex_2: -726788984
+      vortex_20: -14996419
+      vortex_21: 2022393099
+      vortex_3: -2119908422
+      vortex_4: -1104007774
+      vortex_5: -994554902
+      vortex_6: -66178073
+      vortex_7: 536206087
+      vortex_8: -1404819862
+      vortex_9: 969800331
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

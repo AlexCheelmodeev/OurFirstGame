@@ -2,50 +2,55 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5.0f;
-    private Animator animator;
-    private Rigidbody2D rb;
-    private Vector2 movement;
+    public float moveSpeed = 5.0f; // Скорость движения игрока.
+    private Animator animator; // Компонент анимации игрока.
+    private LayerMask wallsLayer;
+    private bool isFacingRight = true; // Флаг для определения направления персонажа.
+    private SpriteRenderer spriteRenderer; // Компонент SpriteRenderer.
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        wallsLayer = LayerMask.GetMask("Walls"); // Получаем слой "Walls" по его имени.
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Получаем компонент SpriteRenderer.
     }
 
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(horizontalInput, verticalInput, 0).normalized;
 
-        movement = new Vector2(horizontalInput, verticalInput).normalized;
+        // Проверяем наличие стены перед игроком.
+        Vector2 targetPos = transform.position + movement * moveSpeed * Time.deltaTime;
 
-        if (movement != Vector2.zero)
+        if (IsWalkable(targetPos))
         {
-            animator.SetBool("IsRunning", true);
+            // Перемещаем игрока.
+            transform.Translate(movement * moveSpeed * Time.deltaTime);
 
-            if (horizontalInput < 0 && verticalInput < 0)
+            // Обновляем переменную isFacingRight в зависимости от направления движения по горизонтали.
+            if (horizontalInput > 0)
             {
-                animator.SetBool("IsRunningReverse", true);
+                isFacingRight = true;
             }
-            else
+            else if (horizontalInput < 0)
             {
-                animator.SetBool("IsRunningReverse", false);
+                isFacingRight = false;
             }
-        }
-        else
-        {
-            animator.SetBool("IsRunning", false);
-            animator.SetBool("IsRunningReverse", false);
+
+            // Устанавливаем параметр "IsRunning" в аниматоре на основе переменной isRunning.
+            animator.SetBool("IsRunning", (horizontalInput != 0 || verticalInput != 0));
         }
 
-        // Обработка движения и управление персонажем.
-        // ...
+        // Зеркально отражаем персонажа при необходимости.
+        spriteRenderer.flipX = !isFacingRight;
     }
 
-    private void FixedUpdate()
+    private bool IsWalkable(Vector2 targetPos)
     {
-        // Применение движения в физическом обновлении.
-        rb.velocity = movement * moveSpeed;
+        float radius = 0.2f;
+        Collider2D hitCollider = Physics2D.OverlapCircle(targetPos, radius, wallsLayer);
+        return (hitCollider == null);
     }
 }
