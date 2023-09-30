@@ -18,7 +18,7 @@ public class ExitPortalScript : MonoBehaviour
             }
 
             // Вызвать метод LoadNextLevel через 1 секунду.
-            Invoke("LoadNextLevel", 1f);
+            Invoke("LoadNextLevel", 0.1f);
         }
     }
 

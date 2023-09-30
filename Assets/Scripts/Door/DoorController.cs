@@ -1,38 +1,45 @@
 using UnityEngine;
+using UnityEngine.UI; // Для работы с текстом на UI-компоненте.
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private Animator doorAnimator; // Ссылка на компонент анимации двери.
-    [SerializeField] private GameObject doorCanvas; // Ссылка на GameObject с текстом.
+    [SerializeField] private int requiredEnemies = 1; // Количество необходимых врагов.
+    private int currentEnemies; // Текущее количество врагов.
 
-    private bool playerNearDoor = false;
+    public Text doorText; // Ссылка на текстовый элемент, отображающий количество оставшихся врагов.
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (other.CompareTag("Player"))
+        currentEnemies = requiredEnemies;
+        UpdateDoorText();
+    }
+
+    public void EnemyDestroyed()
+    {
+        if (currentEnemies > 0)
         {
-            playerNearDoor = true;
-            doorCanvas.SetActive(true); // Включаем GameObject с текстом при подходе игрока к двери.
+            currentEnemies--;
+            UpdateDoorText();
+        }
+
+        if (currentEnemies == 0)
+        {
+            OpenDoor();
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void UpdateDoorText()
     {
-        if (other.CompareTag("Player"))
+        if (doorText != null)
         {
-            playerNearDoor = false;
-            doorCanvas.SetActive(false); // Выключаем GameObject с текстом, когда игрок уходит от двери.
+            doorText.text = "Enemies Left: " + currentEnemies.ToString();
         }
     }
 
-    private void Update()
+    private void OpenDoor()
     {
-        if (playerNearDoor && Input.GetKeyDown(KeyCode.E))
-        {
-            // Проигрываем анимацию открытия двери.
-            doorAnimator.SetTrigger("Open");
-            doorCanvas.SetActive(false); // Выключаем GameObject с текстом.
-            gameObject.SetActive(false); // Выключаем этот объект (соседний коллайдер).
-        }
+        // Здесь добавьте код, который должен выполниться при открытии двери.
+        // Например, проиграть анимацию или звук, затем уничтожить дверь.
+        Destroy(gameObject);
     }
 }
