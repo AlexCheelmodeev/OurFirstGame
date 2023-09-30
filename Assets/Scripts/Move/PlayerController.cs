@@ -76,5 +76,8 @@ public class PlayerController : MonoBehaviour
 
         // Обновляем флаг направления.
         isFacingRight = !isFacingRight;
+
+        Debug.Log("Character flipped!"); // Добавляем отладочный вывод.
     }
+
 }
