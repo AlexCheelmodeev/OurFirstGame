@@ -46,6 +46,12 @@ public class PlayerController : MonoBehaviour
             {
                 FlipCharacter();
             }
+
+            // Проверяем нажатие клавиши Е и проигрываем триггер в аниматоре.
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                animator.SetTrigger("IsTriggered");
+            }
         }
     }
 

@@ -31,6 +31,8 @@ public class DoorController : MonoBehaviour
         {
             // Проигрываем анимацию открытия двери.
             doorAnimator.SetTrigger("Open");
+            doorCanvas.SetActive(false); // Выключаем GameObject с текстом.
+            gameObject.SetActive(false); // Выключаем этот объект (соседний коллайдер).
         }
     }
 }
