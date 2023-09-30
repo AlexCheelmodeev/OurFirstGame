@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1079585695580297469}
   - component: {fileID: 1079585695580297468}
   - component: {fileID: 1079585695580297347}
+  - component: {fileID: 2009066732}
   m_Layer: 0
   m_Name: portal1
   m_TagString: Teleport
@@ -114,6 +115,27 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00633806, y: -0.0063367486}
   serializedVersion: 2
-  m_Radius: 1.175
+  m_Radius: 0.5413417
+--- !u!95 &2009066732
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079585695580297471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b98fb4e5dacc98a4fbec737a6a681612, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
