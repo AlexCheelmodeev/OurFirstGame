@@ -3,7 +3,7 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     [SerializeField] private Animator doorAnimator; // Ссылка на компонент анимации двери.
-    [SerializeField] private Canvas doorCanvas; // Ссылка на Canvas с текстом.
+    [SerializeField] private GameObject doorCanvas; // Ссылка на GameObject с текстом.
 
     private bool playerNearDoor = false;
 
@@ -12,7 +12,7 @@ public class DoorController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearDoor = true;
-            doorCanvas.enabled = true; // Включаем Canvas с текстом при подходе игрока к двери.
+            doorCanvas.SetActive(true); // Включаем GameObject с текстом при подходе игрока к двери.
         }
     }
 
@@ -21,7 +21,7 @@ public class DoorController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearDoor = false;
-            doorCanvas.enabled = false; // Выключаем Canvas с текстом, когда игрок уходит от двери.
+            doorCanvas.SetActive(false); // Выключаем GameObject с текстом, когда игрок уходит от двери.
         }
     }
 
