@@ -26,6 +26,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+
     public void ResumeGame()
     {
         isPaused = false;
