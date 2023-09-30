@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 29ca837d017d8a748942554b7652fb62
+guid: 0f1eb10dfbf306946b78dfa88253c931
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,133 +103,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Runing_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 447
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 094cb1cea4ae239409663e0dd23ca491
-      internalID: -400729865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Runing_1
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 0
-        width: 447
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da701e7f18c260c48ab358c4044aeeef
-      internalID: -4896576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Runing_2
-      rect:
-        serializedVersion: 2
-        x: 894
-        y: 0
-        width: 447
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d5ff050ebf0e7649b51915eff1dc16b
-      internalID: -1091756371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Runing_3
-      rect:
-        serializedVersion: 2
-        x: 1341
-        y: 0
-        width: 447
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 663f5042013ccf640bb76582df56c8f7
-      internalID: -1136235421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Runing_4
-      rect:
-        serializedVersion: 2
-        x: 1788
-        y: 0
-        width: 447
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60c01e8e2fac99246a8a2fde7f192a0f
-      internalID: -1633368363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Runing_5
-      rect:
-        serializedVersion: 2
-        x: 2235
-        y: 0
-        width: 447
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 396692accc61cc74ea026df2ffb4fc32
-      internalID: 677063138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -240,13 +114,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Runing_0: -400729865
-      Runing_1: -4896576
-      Runing_2: -1091756371
-      Runing_3: -1136235421
-      Runing_4: -1633368363
-      Runing_5: 677063138
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
