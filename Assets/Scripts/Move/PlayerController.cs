@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     private bool IsWalkable(Vector2 targetPos)
     {
         // Радиус для проверки столкновения с объектами на слое "Walls".
-        float radius = 1f;
+        float radius = 0.2f;
 
         // Выполняем лучевое столкновение с объектами на слое "Walls".
         Collider2D hitCollider = Physics2D.OverlapCircle(targetPos, radius, wallsLayer);
