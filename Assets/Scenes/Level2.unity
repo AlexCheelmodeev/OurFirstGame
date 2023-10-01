@@ -2459,7 +2459,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Text
-      value: "             \u041D\u0430\u0436\u043C\u0438  \"\u0415\" ;)"
+      value: "             \n                   \u041D\u0430\u0436\u043C\u0438  \"\u0415\"
+        ;)"
       objectReference: {fileID: 0}
     - target: {fileID: 6846748366712140867, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Name

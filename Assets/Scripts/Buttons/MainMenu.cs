@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         // «агружаем первый уровень (или другой уровень, который вы хотите использовать дл€ начала игры).
-        SceneManager.LoadScene("Level1"); // «амените "Level1" на им€ вашего уровн€.
+        SceneManager.LoadScene("BeforeGameIntro"); // «амените "Level1" на им€ вашего уровн€.
     }
 
     public void ShowCreators()

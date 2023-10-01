@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teleport
   - Teleport2
+  - AudioController
   layers:
   - Default
   - TransparentFX
