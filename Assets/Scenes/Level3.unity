@@ -2885,6 +2885,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1487175831}
     m_Modifications:
+    - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: m_Text
+      value: "             \n          \u041F\u043E\u043B\u044C\u0437\u0443\u0439\u0441\u044F
+        \u0441\u0438\u043D\u0438\u043C\u0438 \u043F\u043E\u0440\u0442\u0430\u043B\u0430\u043C\u0438\n                      
+        \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F"
+      objectReference: {fileID: 0}
     - target: {fileID: 6846748366712140867, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Name
       value: GameManager
