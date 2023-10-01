@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject creatorsPanel; // —сылка на панель с информацией о создател€х.
-    public GameObject controlsPanel; // —сылка на панель с управлением.
+    [SerializeField] private GameObject creatorsPanel; // —сылка на панель с информацией о создател€х.
+    [SerializeField] private GameObject controlsPanel; // —сылка на панель с управлением.
 
     private bool creatorsPanelActive = false; // ‘лаг, показывающий, активна ли панель создателей.
     private bool controlsPanelActive = false; // ‘лаг, показывающий, активна ли панель управлени€.
