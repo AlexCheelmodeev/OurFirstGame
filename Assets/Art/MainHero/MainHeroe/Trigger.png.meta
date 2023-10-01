@@ -134,7 +134,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 524
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,9 +153,9 @@ TextureImporter:
       name: Trigger_1
       rect:
         serializedVersion: 2
-        x: 524
+        x: 600
         y: 0
-        width: 524
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,9 +174,9 @@ TextureImporter:
       name: Trigger_2
       rect:
         serializedVersion: 2
-        x: 1048
+        x: 1200
         y: 0
-        width: 524
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}

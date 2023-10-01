@@ -2324,6 +2324,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6846748367032520006, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846748367032520007, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: roof
+      value: 
+      objectReference: {fileID: 1323321751}
     - target: {fileID: 6846748367800884603, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2341,6 +2349,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1323321751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6846748367032520005, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+  m_PrefabInstance: {fileID: 1087796950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1427189660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2251180793262010697, guid: 15d0223dde56663429746e9d67ef9dbd, type: 3}

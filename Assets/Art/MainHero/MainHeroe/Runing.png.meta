@@ -110,7 +110,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 447
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -129,9 +129,9 @@ TextureImporter:
       name: Runing_1
       rect:
         serializedVersion: 2
-        x: 447
+        x: 600
         y: 0
-        width: 447
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,9 +150,9 @@ TextureImporter:
       name: Runing_2
       rect:
         serializedVersion: 2
-        x: 894
+        x: 1200
         y: 0
-        width: 447
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,9 +171,9 @@ TextureImporter:
       name: Runing_3
       rect:
         serializedVersion: 2
-        x: 1341
+        x: 1800
         y: 0
-        width: 447
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       name: Runing_4
       rect:
         serializedVersion: 2
-        x: 1788
+        x: 2400
         y: 0
-        width: 447
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,9 +213,9 @@ TextureImporter:
       name: Runing_5
       rect:
         serializedVersion: 2
-        x: 2235
+        x: 3000
         y: 0
-        width: 447
+        width: 600
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
