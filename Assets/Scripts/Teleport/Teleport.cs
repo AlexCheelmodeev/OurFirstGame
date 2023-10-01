@@ -5,6 +5,8 @@ public class Teleport : MonoBehaviour
     private Transform destination; // Пункт назначения для телепортации.
     public bool isTeleport2; // Флаг для определения типа телепорта.
     public float distance = 0.2f; // Минимальное расстояние для активации телепорта.
+    public AudioSource teleportSound; // Звук телепортации.
+
 
     public Animator playerAnimator; // Ссылка на аниматор игрока.
 
@@ -25,7 +27,13 @@ public class Teleport : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, other.transform.position) > distance)
         {
-            // Используем destination.position.x, а не distanse.position.x.
+            // Воспроизводим звук телепортации.
+            if (teleportSound != null)
+            {
+                teleportSound.PlayOneShot(teleportSound.clip);
+            }
+
+            // Теперь выполняем телепортацию.
             other.transform.position = new Vector2(destination.position.x, destination.position.y);
 
             // Устанавливаем триггер анимации в аниматоре игрока.
@@ -35,4 +43,5 @@ public class Teleport : MonoBehaviour
             }
         }
     }
+
 }

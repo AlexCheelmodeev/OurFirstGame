@@ -6,6 +6,11 @@ public class CapchaTrigger : MonoBehaviour
     public Animator doorAnimator; // Присоедините аниматор двери.
     public Animator animator; // Присоедините аниматор с триггером "Wrong".
 
+    public AudioSource correctAnswerAudioSource;
+    public AudioSource wrongAnswerAudioSource;
+    public AudioClip correctAnswerSound;
+    public AudioClip wrongAnswerSound;
+
     public void CloseCanvasAndOpenDoor()
     {
         if (canvasToClose != null)
@@ -13,16 +18,18 @@ public class CapchaTrigger : MonoBehaviour
             canvasToClose.gameObject.SetActive(false);
         }
 
-        if (doorAnimator != null)
+        if (doorAnimator != null && correctAnswerAudioSource != null)
         {
+            correctAnswerAudioSource.PlayOneShot(correctAnswerSound);
             doorAnimator.SetTrigger("IsOpening");
         }
     }
 
     public void ActivateAnimation()
     {
-        if (animator != null)
+        if (animator != null && wrongAnswerAudioSource != null)
         {
+            wrongAnswerAudioSource.PlayOneShot(wrongAnswerSound);
             animator.SetTrigger("Wrong");
         }
     }

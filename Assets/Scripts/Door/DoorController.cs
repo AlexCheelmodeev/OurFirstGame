@@ -9,6 +9,7 @@ public class DoorController : MonoBehaviour
     public Text doorText;
     private Animator doorAnimator;
     private bool isPlayerInsideDoorCollider = false;
+    public AudioSource doorAudioSource;
 
     private void Start()
     {
@@ -46,6 +47,7 @@ public class DoorController : MonoBehaviour
     {
         // Запускаем анимацию открытия двери, устанавливая триггер "IsOpening".
         doorAnimator.SetTrigger("IsOpening");
+        doorAudioSource.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

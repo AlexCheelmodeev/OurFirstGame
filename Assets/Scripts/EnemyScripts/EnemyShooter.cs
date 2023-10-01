@@ -10,6 +10,7 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField] private float lastShotTime;
 
     [SerializeField] private Animator animator;
+    public AudioSource gunshotSound;
 
     private void Start()
     {
@@ -46,6 +47,15 @@ public class EnemyShooter : MonoBehaviour
 
     private void Shoot()
     {
+        // Проверяем, есть ли компонент AudioSource и аудиофайл для звука выстрела.
+        if (gunshotSound != null && gunshotSound.clip != null)
+        {
+            // Воспроизводим звук выстрела.
+            gunshotSound.PlayOneShot(gunshotSound.clip);
+        }
+
+        // Остальной код для создания пули.
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
     }
+
 }

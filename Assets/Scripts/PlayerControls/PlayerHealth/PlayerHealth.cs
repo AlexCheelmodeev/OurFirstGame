@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 3; // Максимальное количество здоровья игрока.
+    private int maxHealth = 3; // Максимальное количество здоровья игрока.
     private int currentHealth; // Текущее количество здоровья игрока.
     public float invulnerabilityDuration = 1.0f; // Длительность неуязвимости после получения урона.
     private bool isInvulnerable = false; // Флаг для неуязвимости игрока.
@@ -11,7 +11,13 @@ public class PlayerHealth : MonoBehaviour
     public Image[] heartImages; // Массив изображений сердечек.
     [SerializeField] private Animator animator; // Ссылка на компонент аниматора.
     public Sprite fullHeartSprite; // Спрайт полного сердечка.
-    public Sprite emptyHeartSprite; // Спрайт пустого сердечка;
+    public Sprite emptyHeartSprite; // Спрайт пустого сердечка.
+    public AudioSource damageSound; // Звук получения урона.
+
+
+    public AudioSource deathSound; // Звук смерти.
+    public GameObject gameOverUI; // Панель для отображения экрана Game Over.
+    public GameObject pauseButton; // Кнопка паузы.
 
     private void Start()
     {
@@ -37,6 +43,12 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!isInvulnerable)
         {
+            // Воспроизводим звук получения урона.
+            if (damageSound != null)
+            {
+                damageSound.PlayOneShot(damageSound.clip);
+            }
+
             currentHealth -= amount;
 
             if (currentHealth < 0)
@@ -53,10 +65,11 @@ public class PlayerHealth : MonoBehaviour
 
             if (currentHealth == 0)
             {
-                Die(); // Добавьте метод Die() для обработки смерти игрока.
+                Die(); // Обработка смерти игрока.
             }
         }
     }
+
 
     private void UpdateHealthUI()
     {
@@ -76,9 +89,29 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-        private void Die()
+    private void Die()
     {
-        // Добавьте код для обработки смерти игрока здесь.
-        // Например, проигрывание анимации смерти или перезапуск уровня.
+        // Воспроизводим звук смерти.
+        if (deathSound != null)
+        {
+            deathSound.Play();
+        }
+
+        // Отключаем кнопку паузы.
+        if (pauseButton != null)
+        {
+            pauseButton.SetActive(false);
+        }
+
+        // Показываем экран Game Over.
+        if (gameOverUI != null)
+        {
+            gameOverUI.SetActive(true);
+        }
+
+        // Поставляем игру на паузу.
+        Time.timeScale = 0f;
+
+        // Другие действия, которые нужно выполнить при смерти игрока.
     }
 }

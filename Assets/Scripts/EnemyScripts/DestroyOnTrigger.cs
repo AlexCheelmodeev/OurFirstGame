@@ -3,6 +3,7 @@ using UnityEngine;
 public class DestroyOnTrigger : MonoBehaviour
 {
     public GameObject objectToDestroy; // —сылка на объект дл€ уничтожени€.
+    public AudioSource audioSource; // —сылка на компонент AudioSource.
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -11,7 +12,9 @@ public class DestroyOnTrigger : MonoBehaviour
             // ”ничтожаем объект, если он задан.
             if (objectToDestroy != null)
             {
+                audioSource.Play();
                 Destroy(objectToDestroy);
+
             }
         }
     }
