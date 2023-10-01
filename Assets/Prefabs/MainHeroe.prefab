@@ -292,5 +292,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   animator: {fileID: 3350758160520085099}
-  fullHeartSprite: {fileID: 21300000, guid: 118d7e40cd21c114289ca004e738caa8, type: 3}
-  emptyHeartSprite: {fileID: 21300000, guid: 12b175f3d74b1044d8fc6a5a95e70bab, type: 3}
+  fullHeartSprite: {fileID: 21300000, guid: 36c65e9706fc0f74d93d3bfa78baf693, type: 3}
+  emptyHeartSprite: {fileID: 21300000, guid: 58eb6086b88addf468792590c3007b2e, type: 3}

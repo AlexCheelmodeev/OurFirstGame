@@ -8,6 +8,7 @@ public class DoorController : MonoBehaviour
 
     public Text doorText;
     private Animator doorAnimator;
+    private bool isPlayerInsideDoorCollider = false;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class DoorController : MonoBehaviour
         // Получаем компонент Animator у двери.
         doorAnimator = GetComponent<Animator>();
     }
+
 
     public void EnemyDestroyed()
     {
@@ -28,7 +30,7 @@ public class DoorController : MonoBehaviour
 
         if (currentEnemies == 0)
         {
-            OpenDoor();
+            isPlayerInsideDoorCollider = true;
         }
     }
 
@@ -45,4 +47,16 @@ public class DoorController : MonoBehaviour
         // Запускаем анимацию открытия двери, устанавливая триггер "IsOpening".
         doorAnimator.SetTrigger("IsOpening");
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (isPlayerInsideDoorCollider && other.CompareTag("Player"))
+        {
+            // Проверяем, что условие выполнено и объект, вошедший в коллайдер, является игроком.
+            OpenDoor();
+        }
+    }
+
+
+
 }
