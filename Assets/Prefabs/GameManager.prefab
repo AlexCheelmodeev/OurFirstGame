@@ -1190,6 +1190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5982df4053998d748a3fb99fc6b05f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundOnButton: {fileID: 162401767510381304}
+  soundOffButton: {fileID: 8611397971455386146}
 --- !u!1 &5512129115561307075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1313,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7087701085385874125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 587334642}
+        m_TargetAssemblyTypeName: SoundToggle, Assembly-CSharp
+        m_MethodName: ToggleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5817670658135912202
 GameObject:
   m_ObjectHideFlags: 0

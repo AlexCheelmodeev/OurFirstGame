@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundToggle : MonoBehaviour
 {
     private bool isSoundOn = true; // Флаг, указывающий, включен ли звук.
-
+    public Button soundOnButton; // Ссылка на кнопку включения звука.
+    public Button soundOffButton; // Ссылка на кнопку выключения звука.
     private AudioSource backgroundMusic; // Ссылка на аудио источник фоновой музыки.
 
     private void Start()
@@ -19,6 +21,10 @@ public class SoundToggle : MonoBehaviour
         {
             Debug.LogWarning("Background music AudioSource not found.");
         }
+
+        // Устанавливаем начальное состояние кнопок в зависимости от isSoundOn.
+        soundOnButton.interactable = !isSoundOn;
+        soundOffButton.interactable = isSoundOn;
     }
 
     public void ToggleSound()
@@ -41,5 +47,9 @@ public class SoundToggle : MonoBehaviour
                 backgroundMusic.Pause(); // Приостанавливаем фоновую музыку.
             }
         }
+
+        // Обновляем активность кнопок.
+        soundOnButton.interactable = !isSoundOn;
+        soundOffButton.interactable = isSoundOn;
     }
 }
