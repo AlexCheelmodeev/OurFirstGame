@@ -928,7 +928,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -939,7 +939,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '>>>'
+  m_Text: "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C\n \u043A\u0430\u0442\u0441\u0446\u0435\u043D\u0443"
 --- !u!222 &1249938462
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -991,6 +991,10 @@ PlayableDirector:
     value: {fileID: 685899208}
   - key: {fileID: -1784008318347962761, guid: ec311975fc0a00843a44005035f56279, type: 2}
     value: {fileID: 321496399}
+  - key: {fileID: 5889811626180424939, guid: ec311975fc0a00843a44005035f56279, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2485731384520807920, guid: ec311975fc0a00843a44005035f56279, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1430020224
