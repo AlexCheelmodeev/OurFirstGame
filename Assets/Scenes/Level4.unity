@@ -187,15 +187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Text
-      value: "  \u041A\u043B\u044E\u0447\u0430\u043C\u0438 \u043C\u043E\u0436\u043D\u043E
-        \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0434\u0432\u0435\u0440\u044C\n 
-        \u0441 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0432\u0443\u044E\u0449\u0438\u043C
-        \u0446\u0432\u0435\u0442\u043E\u043C.\n  \u0412\u0438\u0440\u0443\u0441\u044B
-        \u043D\u0435 \u0431\u043E\u044F\u0442\u0441\u044F \u0441\u043E\u0431\u0430\u043A"
+      value: "  Use keys for Doors\n  You can't hurt viruses"
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_FontData.m_Alignment
@@ -3549,11 +3545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8939795192975828561, guid: 7ab543b8f50da444fa2511951993d1df, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.69
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 8939795192975828561, guid: 7ab543b8f50da444fa2511951993d1df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.97
+      value: -1.83
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ab543b8f50da444fa2511951993d1df, type: 3}

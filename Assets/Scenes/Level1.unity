@@ -2850,6 +2850,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: m_Text
+      value: "             Use\n                      W A S D\n                to
+        mover"
+      objectReference: {fileID: 0}
     - target: {fileID: 707784139, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Sprite
       value: 

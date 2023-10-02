@@ -2463,8 +2463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Text
-      value: "             \n                   \u041D\u0430\u0436\u043C\u0438  \"\u0415\"
-        ;)"
+      value: "             \n                   Press  \"E\" ;)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 707784139, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Sprite
