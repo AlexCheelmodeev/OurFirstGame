@@ -22942,6 +22942,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a54bd6ac9cd32384ea260037975c106f, type: 3}
+--- !u!1 &2117577801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 831235050910998171, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+  m_PrefabInstance: {fileID: 57243559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2117577804 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5558121063532305572, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+  m_PrefabInstance: {fileID: 57243559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &1993635188621562212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23080,11 +23090,11 @@ PrefabInstance:
     - target: {fileID: 1408505137, guid: 15d0223dde56663429746e9d67ef9dbd, type: 3}
       propertyPath: deathSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2117577804}
     - target: {fileID: 1408505137, guid: 15d0223dde56663429746e9d67ef9dbd, type: 3}
       propertyPath: gameOverUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2117577801}
     - target: {fileID: 1408505137, guid: 15d0223dde56663429746e9d67ef9dbd, type: 3}
       propertyPath: heartImages.Array.data[0]
       value: 
