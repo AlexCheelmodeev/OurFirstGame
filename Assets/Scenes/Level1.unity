@@ -2852,13 +2852,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Text
-      value: "             Use\n                      W A S D\n                to
-        mover"
+      value: "             \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\n                     
+        W A S D\n                \u0434\u043B\u044F \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F"
       objectReference: {fileID: 0}
     - target: {fileID: 707784139, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ad4d13c3813b333458f10912bb44ce96, type: 3}
+    - target: {fileID: 2918741089517084788, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: m_Text
+      value: "\u041C\u0435\u043D\u044E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103793860289720656, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6846748366712140867, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Name
       value: GameManager

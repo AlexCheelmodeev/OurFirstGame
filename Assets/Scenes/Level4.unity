@@ -187,7 +187,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Text
-      value: "  Use keys for Doors\n  You can't hurt viruses"
+      value: "  \u041D\u0430\u0445\u043E\u0434\u0438 \u043A\u043B\u044E\u0447\u0438
+        \u0434\u043B\u044F \u0434\u0432\u0435\u0440\u0435\u0439!\n  \u0418\u0437\u0431\u0435\u0433\u0430\u0439
+        \u0432\u0438\u0440\u0443\u0441\u043E\u0432!"
       objectReference: {fileID: 0}
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_FontData.m_FontSize

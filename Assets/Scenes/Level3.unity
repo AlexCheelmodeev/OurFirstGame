@@ -3268,7 +3268,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 493699096, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Text
-      value: "             \n          Use Blue portals"
+      value: "             \n          \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
+        \u0433\u043E\u043B\u0443\u0431\u044B\u0435 \u043F\u043E\u0440\u0442\u0430\u043B\u044B"
       objectReference: {fileID: 0}
     - target: {fileID: 6846748366712140867, guid: 96f1d3acdae49ef4c95e079533e159a3, type: 3}
       propertyPath: m_Name

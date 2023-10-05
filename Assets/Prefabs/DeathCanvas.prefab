@@ -368,7 +368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart
+  m_Text: "\u0417\u0430\u043D\u043E\u0432\u043E"
 --- !u!1 &831235051159725341
 GameObject:
   m_ObjectHideFlags: 0
